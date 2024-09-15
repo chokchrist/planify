@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { FormPopover } from "@/components/form/form-popover"
 
 import { MobileSidebar } from "./mobile-sidebar"
-import { Form } from "../organization/[organizationId]/form"
 
 export const Navbar = () => {
   return (
