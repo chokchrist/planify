@@ -4,12 +4,13 @@ import { redirect } from "next/navigation"
 import { HelpCircle, User2 } from "lucide-react"
 
 import { db } from "@/lib/db"
+import { getAvailableCount } from "@/lib/org-limits"
+import { checkSubscription } from "@/lib/subscription"
+
 import { Hint } from "@/components/hint"
 import { Skeleton } from "@/components/ui/skeleton"
 import { FormPopover } from "@/components/form/form-popover"
 import { MAX_FREE_BOARD } from "@/constants/boards"
-import { getAvailableCount } from "@/lib/org-limits"
-import { checkSubscription } from "@/lib/subscription"
  
 export const BoardList = async () => {
   const { orgId } = auth();
